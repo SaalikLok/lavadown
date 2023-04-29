@@ -1,0 +1,32 @@
+<div class="container">
+  <div class="row mt-5">
+    <div class="col">
+      <h1>docs</h1>
+      <%= link_to 'New doc', new_doc_path, class: 'btn btn-primary mb-3' %>
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Content</th>
+            <th>Last Updated</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% @docs.each do |doc| %>
+            <tr>
+              <td><%= doc.title %></td>
+              <td><%= doc.content %></td>
+              <td><%= doc.updated_at.strftime('%Y-%m-%d %H:%M') %></td>
+              <td>
+                <%= link_to 'Show', doc_path(doc.slug), class: 'btn btn-sm btn-info' %>
+                <%= link_to 'Edit', edit_doc_path(doc), class: 'btn btn-sm btn-warning' %>
+                <%= link_to 'Delete', doc, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-sm btn-danger' %>
+              </td>
+            </tr>
+          <% end %>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
