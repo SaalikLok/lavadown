@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-  root "homes#index"
-  
+  root "docs#index"
+
   resources :docs, param: :slug
+  get "/about", to: "homes#about"
 end

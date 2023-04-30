@@ -1,4 +1,4 @@
 class HomesController < ApplicationController
-  def index
+  def about
   end
 end
