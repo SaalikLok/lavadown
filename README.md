@@ -1,24 +1,16 @@
-# README
+![lavadown-icon](app/assets/images/lavadown-icon.png)
+# Lavadown
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A self-hosted & open-source markdown publisher for private docs that want to be shared.
 
-Things you may want to cover:
+## V1 Coming soon.
 
-* Ruby version
+### Benefits
+- Own your own data
+- Publish markdown and watch the formating just work ✨
+- Password protect certain posts, and keep others public (In Progress)
+- Intended to be tightly hosted with [Obsidian](https://obsidian.md) (Coming Soon)
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+### Limitations
+- Intended for a single author
+- Self hosted
