@@ -57,6 +57,8 @@ group :development, :test do
   gem "standard"
   gem "dotenv-rails"
   gem "pry-rails"
+  gem "shoulda-matchers", "~> 5.0"
+  gem "factory_bot_rails"
 end
 
 group :development do

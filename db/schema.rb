@@ -15,7 +15,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_04_29_165948) do
   enable_extension "plpgsql"
 
   create_table "docs", force: :cascade do |t|
-    t.string "title"
+    t.string "title", null: false
     t.text "content"
     t.string "password_digest"
     t.string "slug"
